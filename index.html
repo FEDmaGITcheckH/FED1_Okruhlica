@@ -1,39 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: aqua;
+      }
+      form {
+        background-color: whitesmoke;
+        width: 50%;
+        margin: 0 auto 0 auto;
+        padding: 10px;
+      }
+      input, select {
+        display: block;
+        margin-bottom: 5px;
+        width: 100%;
+        border-width: 1px;
+        border-radius: 0;
+      }
+      #submitButton {
+        background-color: rgb(103, 165, 11);
+        color: white;
+        border-width: 0;
+        padding: 5px;
+      }
+      .radio {
+        display: inline;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kontaktny formular</h1>
+    <form target="_blank" method="get" autocomplete="on">
+      <input type="submit" value="Send data to the server" />
+      <input type="color" name="color" />
+      <input type="date" name="date" />
+      <input type="time" />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        value="webinar@exampleEmail.com"
+        readonly
+      />
+ 
+      <input type="text" name="text" required maxlength="10" />
+
+      <input type="checkbox" name="overene" value="overene">
+      <input type="number" name="number" step="10" min="5" max="25">
+      <input type="range" name="number" step="10" min="5" max="55">
+      <select name="select" id="select" multiple>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+      </select>
+ 
+      <input list="browsers" name="browser" id="browser" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+      </datalist>
+
+      <label for="1">1</label>
+      <input class="radio" type="radio" name="radio" value="1" id="1">
+      <label for="2">2</label>
+      <input class="radio" type="radio" name="radio" value="2" id="2">
+      <label for="3">3</label>
+      <input class="radio" type="radio" name="radio" value="3" id="3">
+
+
+
+      <input type="reset">
+ 
+      <input id="submitButton" type="submit" value="Submit" />
+    </form>
+  </body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LMS</title>
-    <style>
-      ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-      }
-      li {
-        display: inline-block;
-        font-size: 18px;
-        font-weight: 200;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    form {
+      background-color: white;
+      width: 60%;
+    }
+    fieldset {
+      margin: 10px;
+    }
+    input {
+      margin-bottom: 10px;
+    }
+    body {
+      background-color: lightgray;
+    }
+    legend, input[type="submit"] {
+      background-color: black;
+      color: white;
+      padding: 3px 6px;
+    }
+    input[type="submit"] {
+      margin: 10px;
+    }
+  </style>
 </head>
-<body style="font-family : Impact;">
-  <div>
-    <a href="/"><span aria-label="logotype" style=" font-size: 50px;">LMS</span></a>
-  </div>
+<body>
+  <form>
+    <h1>Formular s fieldsetom</h1>
+    <fieldset>
+      <legend>Osobne udaje</legend>
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" required>
+      <br>
+      <label for="lastName">Last name</label>
+      <input type="text" id="lastName" required>
+    </fieldset>
 
-  <div>
-    <ul>
-      <li><a href="./pages/title.html">Titles</a></li>
-      <li><a href="./pages/members.html">Members</a></li>
-      <li><a href="./pages/rentals.html">Rentals</a></li>
-      <li><a href="./pages/notifications.html">Notifications</a></li>
-    </ul>
-  </div>
-
-  <img src="/imgs/library.jpg" style="width: 100%;">
-
+    <fieldset>
+      <legend>Kontaktne udaje</legend>
+      <label for="firstName">Email</label>
+      <input type="text" id="firstName" required>
+      <br>
+      <label for="tel">Telefonne cislo</label>
+      <input type="text" id="lastName" required>
+    </fieldset>
+    <input type="submit" value="odoslat">
+  </form>
 </body>
 </html>

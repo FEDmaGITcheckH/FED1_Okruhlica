@@ -4,11 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add Member</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, input {
+      background-color: #EDF4F4;
+    }
+    form {
+      width: 50%;
+      margin: 0 auto 0 auto;
+      padding: 10px;
+    }
+    input, select {
+      display: block;
+      margin-bottom: 5px;
+      width: 100%;
+      border-width: 1px;
+      border-radius: 0;
+    }
+    input[type="submit"] {
+      background-color: rgb(103, 165, 11);
+      color: white;
+      border-width: 0;
+      padding: 5px;
+    }
+    input[type="check"] {
+      display: inline;
+      width: fit-content;
+    }
+    .check {
+      display: flex;
+    }
+    .radio {
+      display: inline;
+      width: fit-content;
+    }
+  </style>
 </head>
 <body>
   <div>
     <a href="/"><span aria-label="logotype">LMS</span></a>
   </div>
+
+  <h1>Add new member</h1>
+  <form>
+    <label for="nameFir">First name</label>
+    <input type="text" placeholder="First name">
+    <label for="nameLas">Last name</label>
+    <input type="text" placeholder="Last name">
+    <label for="id">Personal ID</label>
+    <input type="text" placeholder="Personal ID">
+    <label for="birthDate">Birth date</label>
+    <input type="date">
+    <label for="gn">Gender</label>
+    <input class="radio" type="radio" name="radio" value="m" id="m">
+    <label for="m">Male</label>
+    <input class="radio" type="radio" name="radio" value="f" id="f">
+    <label for="f">Female</label>
+    <div class="check">
+      <input type="checkbox" style="width:fit-content;">
+      <label for="podmienky" class="check">I agreee to the terms</label>
+    </div>
+
+    <input type="submit" value="Add member">
+  </form>
   
 </body>
 </html>
