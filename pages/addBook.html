@@ -21,6 +21,9 @@
     .allTables tr:nth-child(even) {
       background-color: #f2f2f2;
     }
+    form {
+      display: flex;
+    }
 </style>
 </head>
 <body>
@@ -28,29 +31,15 @@
     <a href="/"><span aria-label="logotype">LMS</span></a>
   </div>
 
-  <form action="addBook.html" method="post">
-    <label for="autor">Autor:</label>
-    <input type="text" id="autor" name="autor" required><br>
+  <form action="addBook.html" method="POST">
+    <input type="text" id="autor" name="autor" placeholder="autor" required><br>
 
-    <label for="nazov">Názov:</label>
-    <input type="text" id="nazov" name="nazov" required><br>
+    <input type="text" id="nazov" name="nazov" placeholder="nazov" required><br>
 
-    <label for="isbn">ISBN:</label>
-    <input type="text" id="isbn" name="isbn" required><br>
+    <input type="text" id="isbn" name="isbn" placeholder="isbn" required><br>
 
-    <label for="pocet_stran">Počet strán:</label>
-    <input type="number" id="pocet_stran" name="pocet_stran" required><br>
-
-    <label for="dostupne_kopie">Dostupné kópie:</label>
-    <input type="number" id="dostupne_kopie" name="dostupne_kopie" required><br>
-
-    <label for="celkovy_pocet_kopii">Celkový počet kópií:</label>
-    <input type="number" id="celkovy_pocet_kopii" name="celkovy_pocet_kopii" required><br>
-
-    <label for="cena_knihy">Cena knihy:</label>
-    <input type="number" id="cena_knihy" name="cena_knihy" required><br>
-
-    <input type="submit" value="Pridať">
+    <input type="submit" value="search">
+    <input type="submit" value="Add book">
   </form>
 
   <table class="allTables">

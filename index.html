@@ -89,59 +89,82 @@
   </body>
 </html> -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    * {
-      box-sizing: border-box;
+    *  {
+      margin: 0;
     }
-    form {
-      background-color: white;
-      width: 60%;
+    header {
+      background-color: lightcoral;
+      text-align: center;
     }
-    fieldset {
-      margin: 10px;
+    nav {
+      display: inline;
     }
-    input {
-      margin-bottom: 10px;
+    ul {
+      list-style: none;
+      display: inline;
     }
-    body {
-      background-color: lightgray;
+    li {
+      display: inline;
+      margin: 0 5px;
     }
-    legend, input[type="submit"] {
-      background-color: black;
+    a {
       color: white;
-      padding: 3px 6px;
+      text-decoration: none;
     }
-    input[type="submit"] {
-      margin: 10px;
+    h1 {
+      display: inline;
     }
   </style>
 </head>
 <body>
-  <form>
-    <h1>Formular s fieldsetom</h1>
-    <fieldset>
-      <legend>Osobne udaje</legend>
-      <label for="firstName">First name</label>
-      <input type="text" id="firstName" required>
-      <br>
-      <label for="lastName">Last name</label>
-      <input type="text" id="lastName" required>
-    </fieldset>
+  <header>
+    <h1>Vitajte na stranke!</h1>
+    <nav>
+      <ul>
+        <li><a href="">Domov</a></li>
+        <li><a href="">Kontakt</a></li>
+        <li><a href="">O nas</a></li>
+        <li><a href="">O nich</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <fieldset>
-      <legend>Kontaktne udaje</legend>
-      <label for="firstName">Email</label>
-      <input type="text" id="firstName" required>
-      <br>
-      <label for="tel">Telefonne cislo</label>
-      <input type="text" id="lastName" required>
-    </fieldset>
-    <input type="submit" value="odoslat">
-  </form>
+  <main>
+    <section>
+      <article>
+        <h2>nejaky test</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusamus. Nihil sapiente fuga, at consequatur facilis, a laboriosam dolorum molestiae rem minima beatae dignissimos perferendis quisquam, ratione tempora nulla labore?</p>
+      </article>
+      <article>
+        <h2>Prehliadace</h2>
+        <aside>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laborum soluta esse nisi consectetur quaerat pariatur sint? Quibusdam, voluptatem eveniet. Enim sapiente recusandae, totam impedit earum fugiat! Consectetur, laborum numquam.
+        </aside>
+        <h3>Google chrome</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolore, laborum saepe vero ea error. Odio vel laudantium facilis quis quod quos, mollitia tempore sit! Dolore quaerat harum necessitatibus eligendi.</p>
+        <h3>Mozzile Firefox</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sit corporis commodi ab mollitia eos quod libero omnis nostrum amet labore odio? Assumenda modi qui ipsam alias possimus repellat animi!</p>
+        <h3>microsoft edge</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum et, eveniet nemo cum cupiditate voluptatem pariatur fuga adipisci, quos esse accusantium maiores deleniti, eligendi repellat impedit ut hic perferendis tempore.</p>
+      </article>
+    </section>
+    <section>
+      <figure>
+        <img src="/imgs/image.png" alt="idk">
+        <figcaption>Taliansko asi neviem vobec kde to je</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tato stranka bola vytvorena v roku 2023</p>
+  </footer>
+  
 </body>
 </html>
