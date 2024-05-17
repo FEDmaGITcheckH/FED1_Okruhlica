@@ -15,14 +15,14 @@ h2 {
   width: fit-content;
   text-shadow: 2px 2px 15px #C70202;
 }
-a:link {
+.a-guide:link {
   color: blue;
   font-weight: 600;
 }
-a:visited {
+.a-guide:visited {
   color: purple;
 }
-a:hover {
+.a-guide:hover {
   color: red;
   text-decoration: underline;
 }
