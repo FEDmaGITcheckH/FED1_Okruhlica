@@ -73,21 +73,21 @@
   <h1>Add new member</h1>
   <form>
     <label for="nameFir">First name</label>
-    <input type="text" placeholder="First name">
+    <input type="text" placeholder="First name" required>
     <label for="nameLas">Last name</label>
-    <input type="text" placeholder="Last name">
+    <input type="text" placeholder="Last name" required>
     <label for="id">Personal ID</label>
-    <input type="text" placeholder="Personal ID">
+    <input type="text" placeholder="Personal ID" required>
     <label for="birthDate">Birth date</label>
-    <input type="date">
+    <input type="date" required>
     <label for="gn">Gender</label>
-    <input class="radio" type="radio" name="radio" value="m" id="m">
+    <input class="radio" type="radio" name="radio" value="m" id="m" required>
     <label for="m">Male</label>
     <input class="radio" type="radio" name="radio" value="f" id="f">
     <label for="f">Female</label>
     <div class="check">
       <input type="checkbox" style="width:fit-content;">
-      <label for="podmienky" class="check">I agreee to the terms</label>
+      <label for="podmienky" class="check">I agreee to the terms*</label>
     </div>
 
     <input type="submit" value="Add member">
