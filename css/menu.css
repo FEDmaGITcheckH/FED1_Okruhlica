@@ -125,3 +125,41 @@ i {
 .hov-div-item:hover {
   background-color: #ddd;
 }
+@media only screen and (max-width: 414px) {
+  nav {
+    display: block;
+    text-align: left;
+  }
+
+  .menu-item {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .lms a {
+    font-size: 50px;
+  }
+
+  .main-hover-div {
+    position: static;
+    box-shadow: none;
+    background-color: #303030;
+  }
+
+  .menu-item:hover .main-hover-div {
+    display: block;
+  }
+
+  .main-hover-div .hov-div-item {
+    display: block;
+    padding: 10px;
+  }
+
+  .hov-div-item a {
+    color: white;
+  }
+
+  .hov-div-item:hover {
+    background-color: #505050;
+  }
+}
