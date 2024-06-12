@@ -4,9 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css/tables.css">
+  <!-- <link rel="stylesheet" href="/css/tables.css"> -->
   <link rel="stylesheet" href="/css/menu.css">
-  <title>Books</title>
+  <script src="/script.js" defer></script>
+  <title>Add New Book</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, input {
+      background-color: #EDF4F4;
+    }
+    form {
+      width: 50%;
+      margin: 0 auto 0 auto;
+      padding: 10px;
+    }
+    input, select {
+      display: block;
+      margin-bottom: 5px;
+      width: 100%;
+      border-width: 1px;
+      border-radius: 0;
+    }
+    input[type="submit"] {
+      background-color: rgb(103, 165, 11);
+      color: white;
+      border-width: 0;
+      padding: 5px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 1248px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
@@ -48,17 +85,38 @@
     </nav>
   </header>
 
-  <form action="addBook.html" method="POST">
-    <input type="text" id="autor" name="autor" placeholder="autor" required><br>
+  <div class="wrapper">
 
-    <input type="text" id="nazov" name="nazov" placeholder="nazov" required><br>
+    <h1>Add new Book: </h1>
 
-    <input type="text" id="isbn" name="isbn" placeholder="isbn" required><br>
+    <form action="addBook.html" method="POST">
 
-    <input type="submit" value="search">
-    <input type="submit" value="Add book">
-  </form>
+      <label for="autor">Author</label>
+      <input type="text" id="autor" placeholder="Author" required>
+      
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Name" required>
+      
+      <label for="isbn">ISBN</label>
+      <input type="text" id="isbn" placeholder="ISBN" required>
+      
+      <label for="numberOfPages">Number of Pages</label>
+      <input type="number" id="numberOfPages" placeholder="Number of Pages" required>
+      
+      <label for="availableCopies">Available Copies</label>
+      <input type="number" id="availableCopies" placeholder="Available Copies" required>
+      
+      <label for="numberOfCopies">Total Copies</label>
+      <input type="number" id="numberOfCopies" placeholder="Total Copies" required>
+      
+      <label for="price">Price</label>
+      <input type="number" id="price" placeholder="Price" step="0.01" required>
+      
+      <input type="submit" value="Add Book">
+    </form>
 
+  </div>
+<!-- 
   <table class="allTables">
     <thead>
       <tr>
@@ -94,7 +152,7 @@
         <td>The price of the book / €: 90</td>
       </tr>
     </tbody>
-  </table>
+  </table> -->
   
 </body>
 </html>
